@@ -45,4 +45,6 @@ mongoose.connect(
       : console.log(`Connected`);
   }
 );
-app.set("port", PORT);
+app.listen(PORT, () => {
+  console.log(`App running on port ${PORT}!`);
+});
