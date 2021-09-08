@@ -5,6 +5,7 @@ const api = require("./route/api");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 require("dotenv").config();
+var port = process.env.PORT || 8000;
 
 // CSS and HTML Files
 app.use(express.static("public"));
@@ -44,6 +45,6 @@ mongoose.connect(
       : console.log(`Connected`);
   }
 );
-app.listen("4000", () => {
-  console.log(`Server started on port 4000`);
+server.listen(port, () => {
+  console.log("App is running on port " + port);
 });
