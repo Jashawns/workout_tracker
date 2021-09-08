@@ -23,7 +23,7 @@ This is a workout tracker using the Mongo database with a Mongoose schema and ha
 
 ## Installation 
 
-To run this program locally npm i to install dependencies and then run npm run seed to populate seeded data. Finally run node server.js and open local host 4000 in browswer. 
+To run this program locally npm i to install dependencies and then run npm run seed to populate seeded data. Finally run node server.js and open local host 8080 in browswer. 
 
 ## User Story
 
