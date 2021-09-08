@@ -31,11 +31,12 @@ app.get("/exercise", (req, res) => {
 
 // mongodb connection
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/workout",
+  process.env.MONGODB_URI || 'mongodb://localhost/mighty-chamber-17574',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false,
+    useCreateIndex: true,
+    useFindAndModify: false
   },
   (e) => {
     e
